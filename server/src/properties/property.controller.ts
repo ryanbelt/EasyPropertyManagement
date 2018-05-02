@@ -12,4 +12,10 @@ controller.post('/', async (req, res) => {
   res.send(properties);
 });
 
+controller.get('/:id', async (req, res)=>{
+  let porpertyId = req.params.id;
+  const property = await propertyService.findProperty(porpertyId);
+  res.send(property)
+})
+
 export { controller as PropertyController };

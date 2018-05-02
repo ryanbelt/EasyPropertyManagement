@@ -1,0 +1,20 @@
+.table-cell{
+  text-align:center;
+}
+
+.table-header{
+  text-align:center;
+}
+
+.title{
+  font-size:24px;
+  margin: 0 20px;
+  font-weight:600;
+}
+
+.address{
+  font-size:14px;
+  margin-left: 20px;
+  font-weight:300;
+  color: darkblue;
+}

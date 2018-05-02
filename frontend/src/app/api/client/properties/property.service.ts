@@ -39,4 +39,10 @@ export class PropertyService {
       }
     });
   }
+
+  public findProperty(
+    id: string
+  ): Observable<Property>{
+      return this.http.get<Property>(`${PROPERTIES_PATH}/${id}`)
+  }
 }
